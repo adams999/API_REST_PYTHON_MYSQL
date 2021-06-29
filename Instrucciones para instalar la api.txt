@@ -1,0 +1,17 @@
+-instalar python
+-tener el servicio de mysql y apache instalado y ejecutando puede ser con xampp o en el servidor 
+-se debe de instalar virtualenv
+	se instala de la siguiente forma
+	en la consola ejecutar ruta de la carpeta py -m pip install virtualenv
+	luego py -m virtualenv python_modules (se crea el ambiente para trabajar con python)
+	ir a python_modules/scripts/activate.bat (como administrador desde el administrador de archivos)
+	revisar que se tiene en el terminal lo siguiente (python_modules) (sino se usa el terminal bash en ves del powershell)
+	ejecutar pip install flask (se instalan dichos modulos) (pip como npm para instalar paquetes)
+	para ejecutar el archivo ejecutar python app/categoria.py
+
+se instalan las siguientes librerias para establecer la conexion a DB (todo lo que se haga en la consola debe de tener python_modules)
+	ejecutamos
+		pip install flask-sqlalchemy (establecer conexion con DB)
+		pip install flask-marshmallow	(establecer esquemas con nuestra db)
+		pip install marshmallow-sqlalchemy (establecer esquemas con nuestra db)
+		pip install pymysql (driver para establecer la conexion)
