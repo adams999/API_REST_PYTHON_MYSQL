@@ -80,7 +80,7 @@ def update_categoria(id):
     cat_desp = data['cat_desp']
 
     act_categoria.cat_nom = cat_nom
-
+    act_categoria.cat_desp = cat_desp
     db.session.commit()
 
     return categoria_schema.jsonify(act_categoria)
